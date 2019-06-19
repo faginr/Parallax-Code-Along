@@ -9,28 +9,77 @@ html {
   color: #666;
 }
 
-.img1, .img2, .img3{
-  position: relative;
-}
 
 .img1 {
-  background: url(/img/restaurant.jpeg)no-repeat ;
+  background: url(/img/restaurant.jpeg);
   background-size: 100vw;
   min-height: 100%;
 }
 
 .img2 {
-  background: url(/img/cuttingboard.jpeg)no-repeat ;
-  background-position-y: -120px;
+  background: url(/img/cuttingboard.jpeg);
   min-height: 400px;
   background-size: 100vw;
-
 }
 
 .img3 {
-  background: url(/img/pouring.jpeg)no-repeat center; 
-  /* background-position-y: -400px; */
+  background: url(/img/pouring.jpeg);
   min-height: 400px;
   background-size: 100vw;
+}
+.img1,
+.img2,
+.img3 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* Parallax effect */
+  background-attachment: fixed;
+}
+.section{
+  text-align: center;
+  padding: 50px 80px 50px 80px;
 
+}
+
+.section-light{
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark{
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.ptext{
+  position: absolute;
+  top:50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  /* background: #f4f4f4;
+  padding: 10px 0px 10px 0px; */
+}
+
+.ptext .border{
+  background: #111;
+  color: white;
+  padding: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  /* line-height: 5rem; */
+}
+
+@media (max-width:568px){
+  .img1,
+.img2,
+.img3 {
+  background-attachment: scroll;
+}
 }
